@@ -84,4 +84,4 @@ def scrape():
 
     return data
 
-print(scrape())
+# print(scrape())

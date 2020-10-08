@@ -75,7 +75,7 @@ def scrape():
         my_dict = {}
         my_dict["title"] = title
         browser.click_link_by_partial_text(title)
-        my_dict["img_url"] = browser.find_by_text("Original")['href']
+        my_dict["img_url"] = browser.find_by_css('img[class="wide-image"]')["src"]
     
         hemisphere_image_urls.append(my_dict)
         browser.back()

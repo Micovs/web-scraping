@@ -13,15 +13,15 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h1>Mission to Mars</h1>
+      <h1><b>Mission to Mars</b></h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
     </div>
 
     
     <div class="row">
       <div class="col-md-12">
-        <h2>Latest Mars News</h2>
-        <h4> {{ data.news_title }} </h4>
+        <h2><b>Latest Mars News</b></h2>
+        <h4><b> {{ data.news_title }} </b></h4>
         <p> {{ data.news_p }} </p>
       </div>
     </div>
@@ -29,19 +29,19 @@
 
     <div class="row">
       <div class="col-md-8">
-        <h2>Featured Mars Image:</h2>
+        <h2><b>Featured Mars Image:</b></h2>
         <img src="{{data.featured_image_url }}" alt="Mars image, featured" style='width:100%; height:100%;'>
       </div>
     
       <div class="col-md-4">
-        <h2>Mars Facts:</h2>
+        <h2><b>Mars Facts:</b></h2>
         <p>{{data.html_table | safe }}</p>
       </div>
     </div>
     
     <div class="row">
       <div class="col-md-12">
-          <h2 class="align-items-center">Mars Hemispheres</h2>
+          <h2 class="align-items-center"><b>Mars Hemispheres</b></h2>
           <hr>
       </div>
     </div>
@@ -52,6 +52,7 @@
           <img src = "{{hemispheres.img_url}}"style='width: 100%; height: 100%'>
           <div class="caption">
             <h4>{{hemispheres.title}}</h4>
+            <hr>
           </div>
         </div>
       {% endfor %}  
